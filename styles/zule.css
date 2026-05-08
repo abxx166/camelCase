@@ -1,0 +1,186 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 30px;
+    text-align: center;
+}
+
+/* ===== TITULOS ===== */
+h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* ===== GRID DEL INDEX ===== */
+ul {
+    list-style: none;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+/* ===== TARJETAS ===== */
+li {
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== IMAGENES ===== */
+li img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+/* ===== LINKS ===== */
+a {
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    display: block;
+}
+
+/* ===== CARD DE LOS PROBLEMAS ===== */
+.card {
+    background: white;
+
+    width: 350px;
+
+    margin: 60px auto;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ===== IMAGEN EN PROBLEMAS ===== */
+.card img {
+    width: 120px;
+
+    margin-bottom: 15px;
+}
+
+/* ===== INPUTS ===== */
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #f0f0f0;
+
+    font-size: 16px;
+}
+
+/* ===== BOTON ===== */
+button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #00c9a7;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00a884;
+}
+
+/* ===== RESULTADO ===== */
+#resultado {
+    margin-top: 15px;
+
+    font-weight: bold;
+
+    color: #333;
+
+    font-size: 18px;
+}
+
+/* ===== BOTON VOLVER ===== */
+a[href="../index.html"] {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 10px 15px;
+
+    background: #ff6b6b;
+
+    color: white;
+
+    border-radius: 8px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 900px) {
+    ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    ul {
+        grid-template-columns: 1fr;
+    }
+}
